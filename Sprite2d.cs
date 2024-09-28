@@ -11,6 +11,18 @@ public partial class Sprite2d : Sprite2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		
+		float AMOUNT = 5;
+		if(Input.IsActionPressed("ui_up")) {
+			this.Position += new Vector2(0,-AMOUNT);
+		}
+		if(Input.IsActionPressed("ui_down")) {
+			this.Position += new Vector2(0,AMOUNT);
+		}
+		if(Input.IsActionPressed("ui_left")) {
+			this.Position += new Vector2(-AMOUNT, 0);
+		}
+		if(Input.IsActionPressed("ui_right")) {
+			this.Position += new Vector2(AMOUNT, 0);
+		}
 	}
 }
