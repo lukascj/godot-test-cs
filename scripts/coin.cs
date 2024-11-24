@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class coin : Area2D
+public partial class Coin : Area2D
 {
 	// Method triggered when a body enters the coin's area.
 	public void _OnBodyEntered(Node2D body)
